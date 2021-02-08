@@ -89,7 +89,7 @@ img {
 
   font-family: inherit;
 
-  transition-property: background-color, box-shadow;
+  transition-property: background-color, box-shadow, color;
   transition-duration: var(--time-animation);
   transition-timing-function: var(--bezier-animation);
 }
@@ -106,7 +106,7 @@ img {
   background-color: var(--accent-color);
   color: var(--main-bg-color);
 
-  transition-property: background-color;
+  transition-property: background-color, color;
   transition-duration: var(--time-animation);
   transition-timing-function: var(--bezier-animation);
 }
@@ -141,10 +141,6 @@ img {
 /* ==== END COMPONENTS ==== */
 
 /* ==== HEADER ==== */
-
-/* .header {
-  border-bottom: 1px solid #ececec;
-} */
 
 .page-header {
   display: flex;
@@ -752,16 +748,22 @@ textarea {
 .projects-items {
   width: calc((100% - 60px) / 3);
   outline: 1px solid var(--main-bg-color);
+}
+
+.projects-link {
+  display: block;
 
   transition-property: box-shadow;
   transition-duration: var(--time-animation);
   transition-timing-function: var(--bezier-animation);
 }
 
-.projects-items:hover {
+.projects-link:hover,
+.projects-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .projects-items:not(:nth-child(3n)) {
   margin-right: 30px;
 }
