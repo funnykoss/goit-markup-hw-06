@@ -885,10 +885,23 @@ textarea {
   font-style: normal;
 }
 
+.adress-map {
+  transition-property: color;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--bezier-animation);
+}
+
 .adress-map,
 .adress-link,
 .logo-footer {
   text-decoration: none;
+}
+
+.adress-map:hover,
+.adress-map:focus,
+.adress-link:hover,
+.adress-link:focus {
+  color: var(--accent-color);
 }
 
 .footer-text {
