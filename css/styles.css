@@ -395,10 +395,14 @@ img {
   margin-bottom: 10px;
 }
 
+.modal-input-field {
+  position: relative;
+}
+
 .modal-icon {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 13px;
+  left: 12px;
 }
 
 .modal-form-title {
@@ -430,7 +434,7 @@ img {
 }
 
 .modal-input {
-  position: relative;
+  display: block;
   margin: 0;
   padding: 14px 15px;
   width: 100%;
@@ -634,7 +638,7 @@ textarea {
   height: 100%;
   border-radius: 50%;
 
-  transition-property: background-color;
+  transition-property: background-color, color;
   transition-duration: var(--time-animation);
   transition-timing-function: var(--bezier-animation);
 }
@@ -642,9 +646,9 @@ textarea {
 .social-icons {
   fill: currentColor;
 
-  transition-property: fill;
+  /* transition-property: fill;
   transition-duration: var(--time-animation);
-  transition-timing-function: var(--bezier-animation);
+  transition-timing-function: var(--bezier-animation); */
 }
 
 .social-items {
@@ -652,13 +656,19 @@ textarea {
   height: 44px;
 }
 
-.social-link:hover .social-icons,
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+/* .social-link:hover .social-icons,
 .social-link:focus .social-icons,
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
   fill: var(--background-color);
-}
+} */
 
 /* ==== END TEAM ==== */
 
