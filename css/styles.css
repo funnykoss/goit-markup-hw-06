@@ -444,6 +444,23 @@ textarea {
   resize: none;
 }
 
+.textarea-field {
+  width: 448px;
+  height: 120px;
+}
+
+.modal-textarea {
+  margin-bottom: 20px;
+}
+
+.modal-checkbox {
+  margin-bottom: 30px;
+}
+
+.modal-btn {
+  text-align: center;
+}
+
 .btn-send {
   padding: 10px 56px;
 
@@ -854,6 +871,7 @@ textarea {
 .container.footer {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .contacts-footer {
