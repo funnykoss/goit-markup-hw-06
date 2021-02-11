@@ -515,10 +515,11 @@ img {
   display: inline-block;
 
   position: absolute;
-  top: 3px;
+  top: 50%;
   left: 10px;
+  transform: translateY(-50%);
 
-  width: 15px;
+  width: 16px;
   height: 15px;
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
