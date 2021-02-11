@@ -462,12 +462,15 @@ img {
   transition-timing-function: var(--bezier-animation);
 }
 
-.modal-input:focus + .modal-icon {
+.modal-input:focus + .modal-icon,
+.modal-input:hover + .modal-icon {
   fill: var(--accent-color);
 }
 
 .modal-input:focus,
-.textarea-field:focus {
+.textarea-field:focus,
+.modal-input:hover,
+.textarea-field:hover {
   outline: none;
   border-color: var(--accent-color);
 }
@@ -509,7 +512,7 @@ img {
 
 .modal-label-checkbox::before {
   content: " ";
-  display: block;
+  display: inline-block;
 
   position: absolute;
   top: 3px;
@@ -530,12 +533,15 @@ img {
 }
 
 .checkbox:focus + .modal-label-checkbox::before {
-  outline: 2px solid var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .modal-checkbox {
   position: relative;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
   margin-bottom: 30px;
   padding-left: 13px;
 }
