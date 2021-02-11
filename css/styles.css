@@ -530,7 +530,7 @@ img {
 }
 
 .checkbox:focus + .modal-label-checkbox::before {
-  border-color: var(--accent-color);
+  outline: 2px solid var(--accent-color);
 }
 
 .modal-checkbox {
