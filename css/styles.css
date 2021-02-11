@@ -457,7 +457,7 @@ img {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border;
+  transition: border-color;
   transition-duration: var(--time-animation);
   transition-timing-function: var(--bezier-animation);
 }
