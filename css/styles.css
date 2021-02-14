@@ -365,7 +365,7 @@ img {
   display: flex;
   justify-content: flex-end;
 
-  padding: 40px 41px;
+  padding: 40px 40px;
   width: 528px;
   height: 581px;
   background-color: var(--background-color);
@@ -412,6 +412,10 @@ img {
 
 .modal-input-thumb {
   position: relative;
+  display: block;
+
+  margin-top: 4px;
+  color: #000000;
 }
 
 .modal-icon {
@@ -437,12 +441,12 @@ img {
 }
 
 .modal-form {
+  display: flex;
+  flex-direction: column;
   width: 448px;
 }
 
 .modal-label {
-  margin-bottom: 4px;
-
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -452,7 +456,7 @@ img {
 .modal-input {
   display: block;
   margin: 0;
-  padding: 14px 40px;
+  padding: 11px 40px;
   width: 100%;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -476,7 +480,7 @@ img {
 }
 
 .textarea-field {
-  padding: 12px 16px;
+  padding: 11px 16px;
   resize: none;
   width: 448px;
   height: 120px;
@@ -514,9 +518,8 @@ img {
   position: absolute;
   content: " ";
   display: inline-block;
-  top: 50%;
+  top: 3px;
   left: 7px;
-  transform: translateY(-50%);
   width: 16px;
   height: 15px;
   border: 2px solid var(--primary-text-color);
@@ -544,7 +547,7 @@ img {
 .modal-label-checkbox {
   display: block;
   text-align: center;
-  margin-left: 7px;
+  padding-left: 10px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
@@ -555,6 +558,11 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+
+.textarea-thumb {
+  margin-top: 4px;
+  display: block;
 }
 
 .modal-btn {
