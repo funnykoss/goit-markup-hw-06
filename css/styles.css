@@ -518,8 +518,9 @@ img {
   position: absolute;
   content: " ";
   display: inline-block;
-  top: 3px;
+  top: 50%;
   left: 7px;
+  transform: translateY(-50%);
   width: 16px;
   height: 15px;
   border: 2px solid var(--primary-text-color);
@@ -541,7 +542,7 @@ img {
 
 .modal-checkbox {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .modal-label-checkbox {
