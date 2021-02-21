@@ -22,8 +22,6 @@ body {
   color: var(--primary-text-color);
 }
 
-/* ==== COMPONENTS ==== */
-
 .list {
   padding: 0px;
   margin: 0px;
@@ -852,6 +850,21 @@ img {
 }
 
 /* ====  FILTERS ==== */
+
+.filters-items .filter-all {
+  background-color: var(--accent-color);
+  color: var(--main-bg-color);
+
+  transition-property: background-color, color;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--bezier-animation);
+}
+
+.filters-items .filter-all:first-child:hover,
+.filters-items .filter-all:first-child:focus {
+  background-color: var(--main-bg-color);
+  color: var(--primary-text-color);
+}
 
 .section-filters {
   display: flex;
